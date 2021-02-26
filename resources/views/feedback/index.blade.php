@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-12" >
 
-            <a href="{{ route('feedback.create') }}" class="btn btn-primary btn-float"><span class="fa fa-plus"></span>Agregar Feedback</a>
+            <a href="{{ route('feedback.create') }}" class="btn btn-primary btn-float"><span class="fa fa-plus"></span> Agregar Feedback</a>
 
             </div>
 
@@ -41,19 +41,19 @@
 
                                             <?php $data = $feed->id."*".$feed->nombreEmpleado."*".$feed->descripcion;?>
 
-                                        <button  type="button" class="btn btn-info btn-view" data-toggle="modal" data-target="#modal-feed"value="<?php echo $data;?>" > <span class="fa fa-eye"></span></button>
+                                        <button  type="button" class="btn btn-info btn-view mr-1" data-toggle="modal" data-target="#modal-feed"value="<?php echo $data;?>" > <span class="far fa-eye"></span></button>
                                                 {{-- Las salidas y salidas no se eliminan u editan --}}
                                         <form action="{{route('feedback.destroy',$feed->id)}}" method="post">
                                             @method('DELETE')
                                             @csrf
 
 
-                                            <button  type="submit" onclick="return confirm('Delete this element?');" class="btn btn-danger" data-toggle="modal"> <span class="fa fa-eye">Eliminar</span></button>
+                                            <button  type="submit" onclick="return confirm('Delete this element?');" class="btn btn-danger mr-1" data-toggle="modal"> <span class="fa fa-trash-alt"></span></button>
 
                                         </form>
 
 
-                                    <a href="{{route('feedback.edit',$feed->id)}}" class="btn btn-warning btn-eli" ><span class="fa fa-eye">editar</span></a>
+                                    <a href="{{route('feedback.edit',$feed->id)}}" class="btn btn-success btn-eli" ><span class="fas fa-edit"></span></a>
 
 
                                         </div>

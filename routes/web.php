@@ -49,6 +49,8 @@ Route::get('marcaCoaching/MarkCoachings','App\Http\Controllers\MarcaCoachingCont
 Route::get('marcaCoaching/{idemp}/{idcoa}','App\Http\Controllers\MarcaCoachingController@createData')->name('marcaCoaching.createData');
 Route::get('marcaCoaching/{idemp}','App\Http\Controllers\MarcaCoachingController@editarView')->name('marcaCoaching.editRedirect');
 Route::resource('marcaCoaching', 'App\Http\Controllers\MarcaCoachingController');
+Route::post('externalData', 'App\Http\Controllers\ExternalDataController@storeAndUpdate');
+Route::resource('external', 'App\Http\Controllers\ExternalDataController');
 
 
 

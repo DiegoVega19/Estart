@@ -9,7 +9,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <h2 class="card-title col-md-12 text-primary mb-2">Agregar Nuevo</h2>
+                        <h2 class="card-title col-md-12 text-primary mb-2">Editar Entrada</h2>
 
                         <section>
                             <form action="{{route('entrada.update',$ent->id)}}" method="POST">

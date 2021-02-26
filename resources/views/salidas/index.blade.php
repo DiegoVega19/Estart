@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-12" >
 
-            <a href="{{ route('salida.create') }}" class="btn btn-primary btn-float"><span class="fa fa-plus"></span>Agregar Salida</a>
+            <a href="{{ route('salida.create') }}" class="btn btn-primary btn-float"><span class="fa fa-plus"></span> Agregar Salida</a>
 
             </div>
 
@@ -42,7 +42,7 @@
 
                                             <?php $data = $sal->id."*".$sal->nombreEmpleado."*".$sal->fechaMarcada."*".$sal->horaMarcada;?>
 
-                                        <button  type="button" class="btn btn-info btn-view" data-toggle="modal" data-target="#modal-salida"value="<?php echo $data;?>" > <span class="fa fa-eye"></span></button>
+                                        <button  type="button" class="btn btn-info btn-view mr-1" data-toggle="modal" data-target="#modal-salida"value="<?php echo $data;?>" > <span class="far fa-eye"></span></button>
                                                 {{-- Las salidas y salidas no se eliminan u editan --}}
                                         {{-- <form action="{{route('entrada.destroy',$ent->id)}}" method="post">
                                             @method('DELETE')
@@ -54,7 +54,7 @@
                                         </form> --}}
 
 
-                                    <a href="{{route('salida.edit',$sal->id)}}" class="btn btn-warning btn-eli" ><span class="fa fa-eye">editar</span></a>
+                                    <a href="{{route('salida.edit',$sal->id)}}" class="btn btn-success btn-eli" ><span class="fas fa-edit"></span></a>
 
 
                                         </div>

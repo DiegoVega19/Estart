@@ -110,7 +110,6 @@ class EmpleadoController extends Controller
             'nombre' => 'required',
             'apellido' => 'required',
             'cargo' => 'required',
-            'codigoEmpleado' => 'required',
             'sexo' => 'required',
             'edad' => 'required',
 

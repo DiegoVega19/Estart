@@ -11,11 +11,11 @@
                     </div>
                     <div class="card-body">
                         <div class="text-center">
-                            <a href="/marcaCoaching/ViewRecords" class="btn btn-primary">Ver mis Registros</a>
+                            <a href="/marcaCoaching/ViewRecords" class="btn btn-primary btn-lg">Ver mis Registros</a>
                     </div>
                     <div class="card-body">
                         <div class="text-center">
-                            <a href="/marcaCoaching/MarkCoachings" class="btn btn-primary">Marcar Hora de  Mis Coachings</a>
+                            <a href="/marcaCoaching/MarkCoachings" class="btn btn-primary btn-lg">Marcar Hora de  Mis Coachings</a>
                     </div>
                     </div>
 

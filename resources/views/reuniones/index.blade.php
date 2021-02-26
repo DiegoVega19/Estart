@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-12" >
 
-            <a href="{{ route('reunion.create') }}" class="btn btn-primary btn-float"><span class="fa fa-plus"></span>Agregar Reunion</a>
+            <a href="{{ route('reunion.create') }}" class="btn btn-primary btn-float"><span class="fa fa-plus"></span> Crear Nueva Reunion</a>
 
             </div>
 

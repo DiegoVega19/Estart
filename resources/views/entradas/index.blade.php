@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-12" >
 
-            <a href="{{ route('entrada.create') }}" class="btn btn-primary btn-float"><span class="fa fa-plus"></span>Agregar Entradas</a>
+            <a href="{{ route('entrada.create') }}" class="btn btn-primary btn-float"><span class="fa fa-plus"></span> Agregar Entradas</a>
 
             </div>
 
@@ -42,7 +42,7 @@
 
                                             <?php $data = $ent->id."*".$ent->nombreEmpleado."*".$ent->fechaMarcada."*".$ent->horaMarcada;?>
 
-                                        <button  type="button" class="btn btn-info btn-view" data-toggle="modal" data-target="#modal-ent"value="<?php echo $data;?>" > <span class="fa fa-eye"></span></button>
+                                        <button  type="button" class="btn btn-info btn-view mr-1" data-toggle="modal" data-target="#modal-ent"value="<?php echo $data;?>" > <span class="far fa-eye"></span></button>
                                                 {{-- Las entradas y salidas no se eliminan u editan --}}
                                         {{-- <form action="{{route('entrada.destroy',$ent->id)}}" method="post">
                                             @method('DELETE')
@@ -54,7 +54,7 @@
                                         </form> --}}
 
 
-                                    <a href="{{route('entrada.edit',$ent->id)}}" class="btn btn-warning btn-eli" ><span class="fa fa-eye">editar</span></a>
+                                    <a href="{{route('entrada.edit',$ent->id)}}" class="btn btn-warning btn-eli" ><span class="fas fa-edit"></span></a>
 
 
                                         </div>

@@ -44,7 +44,7 @@
 
                                             <?php $data = $marc->id."*".$marc->nombreEmpleado."*".$marc->fechaMarcada."*".$marc->horaMarcada."*".$marc->nombreCat;?>
 
-                                        <button  type="button" class="btn btn-info btn-view" data-toggle="modal" data-target="#modal-marc"value="<?php echo $data;?>" > <span class="fa fa-eye"></span></button>
+                                        <button  type="button" class="btn btn-info btn-view mr-1" data-toggle="modal" data-target="#modal-marc"value="<?php echo $data;?>" > <span class="fa fa-eye"></span></button>
                                                 {{-- Las entradas y salidas no se eliminan u editan --}}
                                         {{-- <form action="{{route('entrada.destroy',$ent->id)}}" method="post">
                                             @method('DELETE')
@@ -56,7 +56,7 @@
                                         </form> --}}
 
 
-                                    <a href="{{route('marcaReunion.editRedirect',$marc->id)}}" class="btn btn-warning btn-eli" ><span class="fa fa-eye">editar</span></a>
+                                    <a href="{{route('marcaReunion.editRedirect',$marc->id)}}" class="btn btn-success btn-eli" ><span class="fas fa-edit"></span></a>
 
 
                                         </div>

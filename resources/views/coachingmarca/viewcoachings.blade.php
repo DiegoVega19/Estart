@@ -44,7 +44,7 @@
 
                                             <?php $data = $coa->id."*".$coa->nombreCoaching."*".$coa->horaInicio."*".$coa->horaFinal."*".$coa->nombreEmpleado;?>
 
-                                        <button  type="button" class="btn btn-info btn-view" data-toggle="modal" data-target="#modal-ent"value="<?php echo $data;?>" > <span class="fa fa-eye"></span></button>
+                                        <button  type="button" class="btn btn-info mr-1" data-toggle="modal" data-target="#modal-ent"value="<?php echo $data;?>" > <span class="far fa-eye"></span></button>
 
                                          {{-- <form action="{{route('entrada.destroy',$ent->id)}}" method="post">
                                             @method('DELETE')
@@ -56,7 +56,7 @@
                                         </form> --}}
 
 
-                                    <a href="{{route('marcaCoaching.createData',[$coa->idEmpleado,$coa->id])}}" class="btn btn-warning btn-eli" ><span class="fa fa-eye">Marcar</span></a>
+                                    <a href="{{route('marcaCoaching.createData',[$coa->idEmpleado,$coa->id])}}" class="btn btn-success btn-eli" ><span class="far fa-clock"></span></a>
 
 
                                         </div>

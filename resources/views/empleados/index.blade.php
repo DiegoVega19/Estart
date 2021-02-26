@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-md-12" >
 
-            <a href="{{ route('empleado.create') }}" class="btn btn-primary btn-float"><span class="fa fa-plus"></span>Agregar Empleados</a>
+            <a href="{{ route('empleado.create') }}" class="btn btn-primary btn-float"><span class="fa fa-plus"></span> Agregar Empleados</a>
 
             </div>
 
@@ -38,26 +38,26 @@
                                     <td>{{$emp->apellido}}</td>
                                     <td>{{$emp->codigoEmpleado}}</td>
                                     <td>
-                                        <div class="btn-group">
+                                        <div class="btn-group ">
 
 
                                             <?php $data = $emp->id."*".$emp->nombre."*".$emp->apellido."*".$emp->carg."*".$emp->codigoEmpleado."*".$emp->sexo."*".$emp->edad;
 
                                             ?>
 
-                                        <button  type="button" class="btn btn-info btn-view" data-toggle="modal" data-target="#modal-empleado"value="<?php echo $data;?>" > <span class="fa fa-eye"></span></button>
+                                        <button  type="button" class="btn btn-info btn-view mr-1" data-toggle="modal" data-target="#modal-empleado"value="<?php echo $data;?>" > <span class="far fa-eye"></span></button>
 
                                         <form action="{{route('empleado.destroy',$emp->id)}}" method="post">
                                             @method('DELETE')
                                             @csrf
 
 
-                                            <button  type="submit" onclick="return confirm('Delete this element?');" class="btn btn-danger" data-toggle="modal"> <span class="fa fa-eye">Eliminar</span></button>
+                                            <button  type="submit" onclick="return confirm('Delete this element?');" class="btn btn-danger mr-1" data-toggle="modal"> <span class="fa fa-trash-alt"></span></button>
 
                                         </form>
 
 
-                                    <a href="{{route('empleado.edit',$emp->id)}}" class="btn btn-warning btn-eli" ><span class="fa fa-eye">editar</span></a>
+                                    <a href="{{route('empleado.edit',$emp->id)}}" class="btn btn-success btn-eli" ><span class="fas fa-edit"></span></a>
 
 
                                         </div>

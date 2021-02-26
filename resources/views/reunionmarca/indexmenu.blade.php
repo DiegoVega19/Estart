@@ -11,11 +11,11 @@
                     </div>
                     <div class="card-body">
                         <div class="text-center">
-                            <a href="/marcaReunion/ViewRecords" class="btn btn-primary">Ver mis Registros</a>
+                            <a href="/marcaReunion/ViewRecords" class="btn btn-primary btn-lg">Ver mis Registros</a>
                     </div>
                     <div class="card-body">
                         <div class="text-center">
-                            <a href="/marcaReunion/MarkMeetings" class="btn btn-primary">Marcar mis reuniones</a>
+                            <a href="/marcaReunion/MarkMeetings" class="btn btn-primary btn-lg">Marcar mis reuniones</a>
                     </div>
                     </div>
 

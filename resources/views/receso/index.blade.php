@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-12" >
 
-            <a href="{{ route('receso.create') }}" class="btn btn-primary btn-float"><span class="fa fa-plus"></span>Agregar Receso</a>
+            <a href="{{ route('receso.create') }}" class="btn btn-primary btn-float"><span class="fa fa-plus"></span> Agregar Receso</a>
 
             </div>
 
@@ -44,7 +44,7 @@
 
                                             <?php $data = $rec->id."*".$rec->empleado."*".$rec->categoria."*".$rec->fechaMarcada."*".$rec->horaMarcada;?>
 
-                                        <button  type="button" class="btn btn-info btn-view" data-toggle="modal" data-target="#modal-recesos"value="<?php echo $data;?>" > <span class="fa fa-eye"></span></button>
+                                        <button  type="button" class="btn btn-info btn-view mr-1" data-toggle="modal" data-target="#modal-recesos"value="<?php echo $data;?>" > <span class="far fa-eye"></span></button>
                                                 {{-- Las salidas y salidas no se eliminan u editan --}}
                                         {{-- <form action="{{route('entrada.destroy',$ent->id)}}" method="post">
                                             @method('DELETE')
@@ -56,7 +56,7 @@
                                         </form> --}}
 
 
-                                    <a href="{{route('receso.edit',$rec->id)}}" class="btn btn-warning btn-eli" ><span class="fa fa-eye">editar</span></a>
+                                    <a href="{{route('receso.edit',$rec->id)}}" class="btn btn-warning btn-eli" ><span class="fas fa-edit"></span></a>
 
 
                                         </div>

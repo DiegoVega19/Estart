@@ -38,19 +38,19 @@
 
                                             <?php $data = $cargo->id."*".$cargo->nombreCargo;?>
 
-                                        <button  type="button" class="btn btn-info btn-view" data-toggle="modal" data-target="#modal-cargo"value="<?php echo $data;?>" > <span class="fa fa-eye"></span></button>
+                                        <button  type="button" class="btn btn-info btn-view mr-1" data-toggle="modal" data-target="#modal-cargo"value="<?php echo $data;?>" > <span class="far fa-eye"></span></button>
 
                                         <form action="{{route('cargo.delete',$cargo->id) }}" method="post">
                                             @method('DELETE')
                                             @csrf
 
 
-                                            <button  type="submit" onclick="return confirm('Delete this element?');" class="btn btn-danger" data-toggle="modal"> <span class="fa fa-eye">Eliminar</span></button>
+                                            <button  type="submit" onclick="return confirm('Delete this element?');" class="btn btn-danger mr-1" data-toggle="modal"> <span class="fa fa-trash-alt"></span></button>
 
                                         </form>
 
 
-                                    <a href="{{ route('cargo.edit',$cargo->id) }}" class="btn btn-warning btn-eli" ><span class="fa fa-eye">editar</span></a>
+                                    <a href="{{ route('cargo.edit',$cargo->id) }}" class="btn btn-success btn-eli" ><span class="fas fa-edit"></span></a>
 
 
                                         </div>

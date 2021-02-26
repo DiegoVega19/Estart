@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-12" >
 
-            <a href="{{ route('coaching.create') }}" class="btn btn-primary btn-float"><span class="fa fa-plus"></span>Agregar Coaching</a>
+            <a href="{{ route('coaching.create') }}" class="btn btn-primary btn-float"><span class="fa fa-plus"></span> Nuevo Entrenamiento</a>
 
             </div>
 
@@ -125,8 +125,8 @@ $(document).ready(function(){
         //alert(cliente);
         var info = coaching.split("*");
         html = "<p><strong>ID:</strong>"+info[0]+"</p>"
-        html += "<p><strong>Hora Inicio:</strong>"+info[1]+"</p>"
-        html += "<p><strong>Hora Fin:</strong>"+info[2]+"</p>"
+        html += "<p><strong>Hora Inicio:</strong>"+info[2]+"</p>"
+        html += "<p><strong>Hora Fin:</strong>"+info[3]+"</p>"
 
 
 

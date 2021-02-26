@@ -308,6 +308,11 @@ return [
             'icon'    => 'far fa-comments',
 
         ],
+        [
+            'text' => 'Datos Externos',
+            'url'  => '/external',
+            'icon'    => 'fas fa-database',
+        ],
 
     ],
 

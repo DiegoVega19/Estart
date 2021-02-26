@@ -9,7 +9,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <h2 class="card-title col-md-12 text-primary mb-2">Agregar Nuevo</h2>
+                        <h2 class="card-title col-md-12 text-primary mb-2">Nueva Reunion</h2>
 
                         <section>
                             @if ($errors->any())
@@ -45,10 +45,10 @@
                                         <tbody>
                                             <tr id="empleado0">
                                                 <td>
-                                                    <select name="empleados[]" class="form-control">
+                                                    <select id="select" name="empleados[]" class="form-control">
                                                         <option value="">-- Seleccionar Asistentes --</option>
                                                         @foreach ($empleados as $empleado)
-                                                            <option value="{{ $empleado->id }}">
+                                                            <option id="optionData" value="{{ $empleado->id }}">
                                                                 {{ $empleado->nombre }}
                                                             </option>
                                                         @endforeach
@@ -61,8 +61,9 @@
 
 
                                         <div class="mx-auto">
-                                            <button id="add_row" class="btn btn-default pull-left mr-1">+ Add</button>
+                                            <button id="add_row" class="btn btn-primary pull-left mr-1">+ Add</button>
                                             <button id='delete_row' class="pull-right btn btn-danger ml-1">- Delete</button>
+                                            <button id="add" class="pull-right btn btn-info ml-1" style="display: none">++ Add All</button>
                                         </div>
                             </div>
                             <div>
@@ -94,6 +95,28 @@
         $("#empleado" + (row_number - 1)).html('');
         row_number--;
       }
+    });
+    $("#select").click(function () {
+        $("#add").show(1000);
+    console.log("tocado");
+  });
+  $("#add").click(function(e){
+      e.preventDefault();
+    console.log("casi lo logra");
+    let optionValues = [];
+    let optionNames = [];
+     $("#select option").each(function () {
+        optionValues.push($(this).val());
+          optionNames.push($(this).text());
+        let new_row_number = row_number - 1;
+      $('#empleado' + row_number).html($('#empleado' + new_row_number).html()).find('td:first-child');
+      $('#empleados_table').append('<tr id="empleado' + (row_number + 1) + '"></tr>');
+        row_number++;
+    });
+    console.log(optionNames);
+    console.log(optionValues);
+
+
     });
   });
         </script>

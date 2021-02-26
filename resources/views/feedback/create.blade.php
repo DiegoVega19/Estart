@@ -9,7 +9,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <h2 class="card-title col-md-12 text-primary mb-2">Agregar Nuevo</h2>
+                        <h2 class="card-title col-md-12 text-primary mb-2">Nuevo Feedback</h2>
 
                         <section>
                             <form action="/feedback" method="POST">
