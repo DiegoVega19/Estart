@@ -313,6 +313,11 @@ return [
             'url'  => '/external',
             'icon'    => 'fas fa-database',
         ],
+        [
+            'text' => 'Ranking',
+            'url'  => '/ranking',
+            'icon'    => 'fas fa-chart-line',
+        ],
 
     ],
 

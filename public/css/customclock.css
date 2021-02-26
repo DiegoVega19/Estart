@@ -328,7 +328,7 @@
 .clock-times__second {
     height: 90px;
     margin-top: 10px;
-    animation: time 2s linear infinite;
+    animation: time 12s linear infinite;
     z-index: 3;
     background-image: linear-gradient(to top, #e45753 0%, #ca09e8 100%);
     width: 3px;
@@ -338,8 +338,8 @@
     height: 80px;
     margin-top: 20px;
     opacity: 0.75;
-    animation: time 20s linear infinite;
-    animation-delay: -35s;
+    animation: time 60s linear infinite;
+    /* animation-delay: -35s; */
 }
 .clock-times__hour {
     height: 70px;
@@ -347,7 +347,7 @@
     width: 5px;
     border-radius: 50px;
     box-shadow: 3px 1px 6px -1px rgba(10, 21, 53, 0.45);
-    animation: time 60s linear infinite;
+    animation: time 3600s linear infinite;
     animation-delay: -20s;
 }
 @keyframes time {

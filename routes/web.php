@@ -51,6 +51,7 @@ Route::get('marcaCoaching/{idemp}','App\Http\Controllers\MarcaCoachingController
 Route::resource('marcaCoaching', 'App\Http\Controllers\MarcaCoachingController');
 Route::post('externalData', 'App\Http\Controllers\ExternalDataController@storeAndUpdate');
 Route::resource('external', 'App\Http\Controllers\ExternalDataController');
+Route::resource('ranking', 'App\Http\Controllers\RankingController');
 
 
 
